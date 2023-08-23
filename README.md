@@ -5,7 +5,8 @@ https://traveloka-clone.vercel.app/
 
 ## Started Local Development
 
-First, run the development server:
+First, install the dependencies like node js and others
+then run the development server:
 
 ```bash
 npm run dev
