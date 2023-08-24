@@ -43,11 +43,6 @@ const LanguageSelector = () => {
             document.removeEventListener('mousedown', handleClickOutside);
         };
     }, []);
-    const languageBorderClasses = {
-        'Indonesia': 'border-green-500',
-        'Singapore': 'border-blue-500',
-        // Tambahkan kelas bingkai untuk bahasa lain jika diperlukan
-    };
     return (
         <>
             <div ref={containerRef} className='flex justify-end'>
