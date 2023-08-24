@@ -1,6 +1,6 @@
 ## Redesign Traveloka Web UI Using Next JS, React JS, Tailwind CSS, and Framer Motion
 
-## Demos link (!live-update): 
+## Demos link (still on work! but it's live update): 
 https://traveloka-clone.vercel.app/
 
 ## Started Local Development
