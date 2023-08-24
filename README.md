@@ -3,10 +3,13 @@
 ## Demos link (still on work! but it's live update): 
 https://traveloka-clone.vercel.app/
 
-## Started Local Development
+## Clone project
+```bash
+$ git clone https://github.com/wisnuuakbr/traveloka-clone
+```
 
-First, install the dependencies like node js and others
-then run the development server:
+## Started Local Development
+run the development server:
 
 ```bash
 npm run dev
