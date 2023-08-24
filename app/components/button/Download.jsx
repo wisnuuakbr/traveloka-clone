@@ -31,7 +31,7 @@ const Download = () => {
     }, []);
     return (
         <>
-            <div ref={containerRef} className='relative'>
+            <div ref={containerRef}>
                 <button
                     onClick={handleOpen}
                     className='flex items-center px-2 py-2 hover:bg-gray-100 rounded-md'
@@ -41,33 +41,35 @@ const Download = () => {
                     <Image src={arrowIcon} width={16} height={16} alt='arrow icon' />
                 </button>
                 {open && (
-                    <motion.div
-                        className='absolute bg-white shadow-sm border rounded-md px-2 py-2 flex flex-col items-center'
-                        initial={{ opacity: 0, scaleY: 0, transformOrigin: 'top', translateY: 0 }}
-                        animate={{
-                            opacity: open ? 1 : 0, // Set opacity based on open state
-                            scaleY: open ? 1 : 0, // Set scaleY based on open state
-                            transformOrigin: 'top', // Set the transform origin to the top
-                            translateY: open ? 0 : -20,
-                        }}
-                        exit={{ opacity: 0, scaleY: 0, translateY: -20 }}
-                        transition={{ duration: 0.3, type: 'spring', damping: 10, stiffness: 100 }}
-                    >
-                        <div className='py-2 text-center'>
-                            <h3 className='font-semibold'>Pindai kode QR untuk mengunduh</h3>
-                        </div>
-                        <div className='py-2'>
-                            <Image src={qrCode} width={116} height={100} alt='qr code' />
-                        </div>
-                        <div className='py-2'>
-                            <a href='https://play.google.com/store/apps/details?id=com.traveloka.android&referrer=adjust_reftag%3DcmkalN1jBsBvs%26utm_source%3DTraveloka%2BDesktop&pli=1'>
-                                <Image src={playStore} width={123} height={100} className='mb-2' alt='playStore' />
-                            </a>
-                            <a href='https://apps.apple.com/app/id898244857?mt=8'>
-                                <Image src={appStore} width={123} height={100} alt='appStore' />
-                            </a>
-                        </div>
-                    </motion.div>
+                    <div className='absolute w-[150px] top-11'>
+                        <motion.div
+                            className='bg-white shadow-sm border rounded-md px-2 py-2 flex flex-col items-center'
+                            initial={{ opacity: 0, scaleY: 0, transformOrigin: 'top', translateY: 0 }}
+                            animate={{
+                                opacity: open ? 1 : 0, // Set opacity based on open state
+                                scaleY: open ? 1 : 0, // Set scaleY based on open state
+                                transformOrigin: 'top', // Set the transform origin to the top
+                                translateY: open ? 0 : -20,
+                            }}
+                            exit={{ opacity: 0, scaleY: 0, translateY: -20 }}
+                            transition={{ duration: 0.3, type: 'spring', damping: 10, stiffness: 100 }}
+                        >
+                            <div className='py-2 text-center'>
+                                <h3 className='font-semibold'>Pindai kode QR untuk mengunduh</h3>
+                            </div>
+                            <div className='py-2'>
+                                <Image src={qrCode} width={116} height={100} alt='qr code' />
+                            </div>
+                            <div className='py-2'>
+                                <a href='https://play.google.com/store/apps/details?id=com.traveloka.android&referrer=adjust_reftag%3DcmkalN1jBsBvs%26utm_source%3DTraveloka%2BDesktop&pli=1'>
+                                    <Image src={playStore} width={123} height={100} className='mb-2' alt='playStore' />
+                                </a>
+                                <a href='https://apps.apple.com/app/id898244857?mt=8'>
+                                    <Image src={appStore} width={123} height={100} alt='appStore' />
+                                </a>
+                            </div>
+                        </motion.div>
+                    </div>
                 )}
             </div>
         </>
