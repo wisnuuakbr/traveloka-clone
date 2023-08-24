@@ -1,22 +1,28 @@
-## Redesign Traveloka Web UI Using Next JS, React JS, Tailwind CSS, and Framer Motion
+# Cloning Traveloka Web Apps
+Redesign the Traveloka Web UI Using Next JS, React JS, Tailwind CSS, and Framer Motion
 
 ## Demos link (still on work! but it's live update): 
 https://traveloka-clone.vercel.app/
 
-## Clone project
+## Requirements
+Traveloka Clone is currently extended with the following requirements.  
+Instructions on how to use them in your own application are linked below.  
+| Requirement | Version   |
+|-------------|-----------|
+| Node        |  16.15.1  |
+| Yarn        |  1.22.19  |
+
+## Installation
+Make sure the requirements above already install on your system.  
+Clone the project to your directory and install the dependencies.
 ```bash
 $ git clone https://github.com/wisnuuakbr/traveloka-clone
 ```
 
 ## Started Local Development
-run the development server:
-
+run the development server using yarn:
 ```bash
-npm run dev
-# or
 yarn dev
-# or
-pnpm dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
