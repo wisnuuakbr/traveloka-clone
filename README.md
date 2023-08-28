@@ -17,9 +17,11 @@ Make sure the requirements above already install on your system.
 Clone the project to your directory and install the dependencies.
 ```bash
 $ git clone https://github.com/wisnuuakbr/traveloka-clone
+$ cd traveloka-clone
+$ yarn add next
 ```
 
-## Started Local Development
+## Started Local Development Server
 run the development server using yarn:
 ```bash
 yarn dev
