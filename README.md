@@ -1,4 +1,4 @@
-# Cloning Traveloka Web Apps
+# Cloning Traveloka UI Web
 Redesign the Traveloka Web UI Using Next JS, React JS, Tailwind CSS, and Framer Motion
 
 ## Demos link (still on work! but it's live update): 
