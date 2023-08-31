@@ -10,6 +10,7 @@ Instructions on how to use them in your own application are linked below.
 | Requirement | Version   |
 |-------------|-----------|
 | Node        |  16.15.1  |
+| Next JS     |  13.4     |
 | Yarn        |  1.22.19  |
 
 ## Installation
